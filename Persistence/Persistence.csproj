@@ -5,13 +5,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.0" />
   </ItemGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+ <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <!-- need to use '?' in front of the type of nullable properties from .Net 6/7 -->
+    <Nullable>disable</Nullable> 
     <ImplicitUsings>enable</ImplicitUsings>
-    <!-- <Nullable>enable</Nullable> -->
   </PropertyGroup>
 
 </Project>
